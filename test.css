@@ -1,382 +1,381 @@
+:root {
+--color-background: 255, 255, 255;
+--color-default: 30, 30, 30;
+--color-inverse: 255, 255, 255;
+--color-primary: 10, 110, 103;
+--color-secondary: 230, 200, 120;
+--color-dark: 2, 37, 35;
+--color-primary-dark: 7, 77, 72;
+--color-primary-light: 18, 204, 192;
+--color-secondary-dark: 179, 147, 93;
+--color-secondary-light: 234, 218, 192;
+}
+/* DEFINE HIDDEN CLASSes FORM THE START */
+.hidden {display: none; }
+/* GLOBAL TRANSITION MODIFY */
+* {
+transition-timing-function: ease-in-out !important;
+transition-duration: 0.3s !important;
+}
 
-    :root {
-        --color-background: 255, 255, 255;
-        --color-default: 30, 30, 30;
-        --color-inverse: 255, 255, 255;
-        --color-primary: 10, 110, 103;
-        --color-secondary: 230, 200, 120;
-        --color-dark: 2, 37, 35;
-        --color-primary-dark: 7, 77, 72;
-        --color-primary-light: 18, 204, 192;
-        --color-secondary-dark: 179, 147, 93;
-        --color-secondary-light: 234, 218, 192;
-    }
-    /* DEFINE HIDDEN CLASSes FORM THE START */
-    .hidden {display: none; }
-    /* GLOBAL TRANSITION MODIFY */
-    * {
-        transition-timing-function: ease-in-out !important;
-        transition-duration: 0.3s !important;
-    }
-    
-    /* DEFINE GLOBAL SCROLLBAR */
-    ::-webkit-scrollbar {width: 2px;}
-    ::-webkit-scrollbar-track {background-color: rgba(var(--color-default), 0.1);}
-    ::-webkit-scrollbar-track:hover {background-color: var(--color-primary);}
-    ::-webkit-scrollbar-thumb {width: 3px; background-color: var(--color-primary);}
-    ::-webkit-scrollbar-thumb:hover {background-color: var(--color-inverse);}
-    
-    /* Remove the fucking underline from links */
-    a {text-decoration: none !important;}
+/* DEFINE GLOBAL SCROLLBAR */
+::-webkit-scrollbar {width: 2px;}
+::-webkit-scrollbar-track {background-color: rgba(var(--color-default), 0.1);}
+::-webkit-scrollbar-track:hover {background-color: var(--color-primary);}
+::-webkit-scrollbar-thumb {width: 3px; background-color: var(--color-primary);}
+::-webkit-scrollbar-thumb:hover {background-color: var(--color-inverse);}
 
-    /* Default spacing for paragraph types */
-    .ladi-paragraph, .ladi-list-paragraph {
-        letter-spacing: 0.25px !important;
-    }
-    
-    /* DEFINE GLOBAL BG */
-    .transbg-dark .ladi-box, .transbg-dark .ladi-background {background: rgba(var(--color-dark),0.15) !important;}
-    .transbg-light .ladi-box, .transbg-light .ladi-background {background: rgba(var(--color-background),0.35) !important;}
-    
-    .transbg-dark:hover .ladi-box, .transbg-dark:hover .ladi-background {background: rgba(var(--color-dark),0.25) !important;}
-    .transbg-light:hover .ladi-box, .transbg-light:hover .ladi-background {background: rgba(var(--color-background),0.75) !important;}
-    
-    .round, .round .ladi-box, .round .ladi-background {border-radius: 10px !important;}
-    .round-b, .round-b .ladi-box, .round-b .ladi-background {border-radius: 20px !important;}
-    .round-s, .round-s .ladi-box, .round-s .ladi-background {border-radius: 5px !important;}
-    
-    .border .ladi-box, .border .ladi-background {border: 1px solid !important;}
-    .border-default .ladi-box, .border-default .ladi-background {border-color: rgb(var(--color-default)) !important;}
-    .border-primary .ladi-box, .border-primary .ladi-background {border-color: rgb(var(--color-primary)) !important;}
-    .border-secondary .ladi-box, .border-secondary .ladi-background {border-color: rgb(var(--color-secondary)) !important;}
-    
-    /* DEFINE GLOBAL POSITIONING CLASSES */
-    .h-center {
-        left: 50%!important;
-        transform: translatex(-50%);
-    }
-    @media (min-width: 768px) {
-        .v-center {
-            top: 50% !important;
-            transform: translatey(-50%);
-        }
-    }
-	/* Dropbox - Product Menu Dropbox */
-	#ProductDropbox > .ladi-popup, #nav_m_menu > .ladi-popup {
-		border-radius: 10px !important;
-	}
-		
-	#ProductDropbox > .ladi-popup > .ladi-popup-background, #nav_m_menu > .ladi-popup > .ladi-popup-background {
-		background-image: url("https://w.ladicdn.com/s360x450/615bd853467382001223f064/backgrounddropboxes-20230816054216-hyf2m.jpg") !important;
-		background-size: cover !important;
-		background-position: center center !important;
-		background-repeat: no-repeat !important;
-		border-radius: 10px !important;
-		box-shadow: 3px 4px 10px rgba(var(--color-dark), 0.5) !important;
-		opacity: 0.95;
-	}
+/* Remove the fucking underline from links */
+a {text-decoration: none !important;}
+
+/* Default spacing for paragraph types */
+.ladi-paragraph, .ladi-list-paragraph {
+letter-spacing: 0.25px !important;
+}
+
+/* DEFINE GLOBAL BG */
+.transbg-dark .ladi-box, .transbg-dark .ladi-background {background: rgba(var(--color-dark),0.15) !important;}
+.transbg-light .ladi-box, .transbg-light .ladi-background {background: rgba(var(--color-background),0.35) !important;}
+
+.transbg-dark:hover .ladi-box, .transbg-dark:hover .ladi-background {background: rgba(var(--color-dark),0.25) !important;}
+.transbg-light:hover .ladi-box, .transbg-light:hover .ladi-background {background: rgba(var(--color-background),0.75) !important;}
+
+.round, .round .ladi-box, .round .ladi-background {border-radius: 10px !important;}
+.round-b, .round-b .ladi-box, .round-b .ladi-background {border-radius: 20px !important;}
+.round-s, .round-s .ladi-box, .round-s .ladi-background {border-radius: 5px !important;}
+
+.border .ladi-box, .border .ladi-background {border: 1px solid !important;}
+.border-default .ladi-box, .border-default .ladi-background {border-color: rgb(var(--color-default)) !important;}
+.border-primary .ladi-box, .border-primary .ladi-background {border-color: rgb(var(--color-primary)) !important;}
+.border-secondary .ladi-box, .border-secondary .ladi-background {border-color: rgb(var(--color-secondary)) !important;}
+
+/* DEFINE GLOBAL POSITIONING CLASSES */
+.h-center {
+left: 50%!important;
+transform: translatex(-50%);
+}
+@media (min-width: 768px) {
+.v-center {
+    top: 50% !important;
+    transform: translatey(-50%);
+}
+}
+/* Dropbox - Product Menu Dropbox */
+#ProductDropbox > .ladi-popup, #nav_m_menu > .ladi-popup {
+	border-radius: 10px !important;
+}
 	
-	
-    /* Dividers */
-    .divider {
-    	left: 50% !important;
-    	transform: translateX(-50%) !important;
-    }
-    
-    .divider {
-    	width: auto !important;
-    	display: flex !important;
-    	justify-content: center !important;
-    	align-items: center !important;
-    	position: absolute !important;
-    	padding: 0px 10px;
-    }
-    
-    .divider .ladi-headline {
-    	color: rgba(var(--color-secondary),1) !important;
-    	width: auto !important;
-    	text-align: center !important;
-    	white-space: nowrap;
-    	font-size: 16px !important;
-    	line-height: 1.2em !important;
-    	letter-spacing: 1px !important;
-    	text-transform: uppercase;
-    	font-weight: 400 !important;
-    	padding: 5px 15px !important;
-    }
-    
-    .divider::before, .divider::after {
-    	content: "";
-    	display: inline-block !important;
-    	width: 150px !important;
-    	height: 2px !important;
-    	background: rgba(var(--color-secondary),1);
-    	margin: 5px 10px !important;
-    }
-    
-    .divider.divider-block .ladi-headline {
-    	background: rgba(var(--color-secondary),1);
-    	color: #fff !important;
-    	border-radius: 50vh;
-    }
-    
-    @media screen and (max-width: 421px) {
-    	.divider {
-    		overflow: hidden !important;
-    	}
-    
-    	.divider::before, .divider::after {
-    		width: 35px !important;
-    		height: 2px !important;
-    	}
-    
-    	.divider .ladi-headline {
-    		font-size: 13px !important;
-    	}
-    }
-    
-    /* BUTTONS FORMAT */
-    .btn-hda {
+#ProductDropbox > .ladi-popup > .ladi-popup-background, #nav_m_menu > .ladi-popup > .ladi-popup-background {
+	background-image: url("https://w.ladicdn.com/s360x450/615bd853467382001223f064/backgrounddropboxes-20230816054216-hyf2m.jpg") !important;
+	background-size: cover !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	border-radius: 10px !important;
+	box-shadow: 3px 4px 10px rgba(var(--color-dark), 0.5) !important;
+	opacity: 0.95;
+}
+
+
+/* Dividers */
+.divider {
+left: 50% !important;
+transform: translateX(-50%) !important;
+}
+
+.divider {
+width: auto !important;
+display: flex !important;
+justify-content: center !important;
+align-items: center !important;
+position: absolute !important;
+padding: 0px 10px;
+}
+
+.divider .ladi-headline {
+color: rgba(var(--color-secondary),1) !important;
+width: auto !important;
+text-align: center !important;
+white-space: nowrap;
+font-size: 16px !important;
+line-height: 1.2em !important;
+letter-spacing: 1px !important;
+text-transform: uppercase;
+font-weight: 400 !important;
+padding: 5px 15px !important;
+}
+
+.divider::before, .divider::after {
+content: "";
+display: inline-block !important;
+width: 150px !important;
+height: 2px !important;
+background: rgba(var(--color-secondary),1);
+margin: 5px 10px !important;
+}
+
+.divider.divider-block .ladi-headline {
+background: rgba(var(--color-secondary),1);
+color: #fff !important;
+border-radius: 50vh;
+}
+
+@media screen and (max-width: 421px) {
+.divider {
+	overflow: hidden !important;
+}
+
+.divider::before, .divider::after {
+	width: 35px !important;
+	height: 2px !important;
+}
+
+.divider .ladi-headline {
+	font-size: 13px !important;
+}
+}
+
+/* BUTTONS FORMAT */
+.btn-hda {
+border-radius: 50vh !important;
+}
+
+.btn-hda .ladi-button {
+	border: none !important;
+border-radius: 50vh !important;
+box-shadow: -3px -2px 5px rgba(var(--color-dark), 0.5);
+}
+.btn-hda .ladi-button-background::after {
+	content: '';
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	bottom: 10%;
+	left: 5.5%;
+	border-radius: 50vh;
+	box-shadow: 2px 1px 3px rgba(var(--color-dark), 0.5);
+}
+.btn-hda .ladi-button-headline {
+	color: rgb(var(--color-inverse)) !important;
+	text-shadow: -0.5px -1px 1.5px rgba(var(--color-dark), 0.5) !important;
+	text-align: center;
+	line-height: 1em;
+}
+.btn-primary .ladi-button-background {
+	background-color: rgba(var(--color-background), 1) !important;
 	border-radius: 50vh !important;
-    }
-    
-    .btn-hda .ladi-button {
-		border: none !important;
-    	border-radius: 50vh !important;
-    	box-shadow: -3px -2px 5px rgba(var(--color-dark), 0.5);
-    }
-	.btn-hda .ladi-button-background::after {
-		content: '';
-		position: absolute;
-		top: 10%;
-		right: 5%;
-		bottom: 10%;
-		left: 5.5%;
-		border-radius: 50vh;
-		box-shadow: 2px 1px 3px rgba(var(--color-dark), 0.5);
-	}
-	.btn-hda .ladi-button-headline {
-		color: rgb(var(--color-inverse)) !important;
-		text-shadow: -0.5px -1px 1.5px rgba(var(--color-dark), 0.5) !important;
-		text-align: center;
-		line-height: 1em;
-	}
-	.btn-primary .ladi-button-background {
-		background-color: rgba(var(--color-background), 1) !important;
-		border-radius: 50vh !important;
-	}
-	.btn-primary .ladi-button-background::after {background-color: rgb(var(--color-primary-light))!important;}
-	.btn-primary:hover .ladi-button-background::after {background-color: rgb(var(--color-primary)) !important;}
-	.btn-secondary .ladi-button-background {
-		background-color: rgba(var(--color-background), 1) !important;
-		border-radius: 50vh !important;
-	}
-	.btn-secondary .ladi-button-background::after {background-color: rgb(var(--color-secondary))!important;}
-	.btn-secondary:hover .ladi-button-background::after { background-color: rgb(var(--color-secondary-dark)) !important;}
-	
-	/* Social buttons */
-	.btn-social .ladi-image {filter: brightness(50%) invert(100%) saturate(0) !important;;}
-	.btn-social:hover .ladi-image {filter: brightness(100%) saturate(1) invert(0%) !important;}
-	
-	/* Advertising buttons */
-	.btn-ads .ladi-button-background {opacity: 0.5 !important;}
-    .btn-ads:hover .ladi-button-background {opacity: 1 !important;}
-    .btn-ads:hover .ladi-button-headline {display: none;}
-	
-	/* TESTIMONY SECTION */
-	.testi-img {
-		width: 120px !important;
-		height: 120px !important;
-	}
-	.testi-img .ladi-image {
-		border-radius: 50vh !important;
-		border: 7px solid rgb(var(--color-background));
-		box-shadow: 2px 3px 5px rgba(var(--color-dark), 1);
-	}
-	.testi-img .ladi-image-background {
-	    height: 100% !important;
-	    width: 100% !important;
-	    background-size: cover !important;
-	    background-position: center center !important;
-	    background-repeat: no-repeat;
-	}
-	.testi-img::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: -15px;
-		bottom: -5px;
-		left: -10px;
-		border-radius: 50%;
-		box-shadow: 2px 3px 5px rgba(var(--color-dark), 1);
-		background-color: rgb(var(--color-primary-light));
-		transform: rotate(30deg);
-	}
-	.testi-img:hover::before {
-		transform: rotate(-15deg);
-		transition: all 1s ease;
-	}
-	
-	
-	/* FAQ SECTION */
-	.faq .ladi-accordion .ladi-frame-background {
-		background-color: rgba(var(--color-background),0.5) !important;
-		border-radius: 5px;
-	}
-	.faq .ladi-accordion .ladi-paragraph {
-		color: rgb(var(--color-default)) !important;
-	}
-	.faq .ladi-accordion .ladi-paragraph span {
-		color: rgb(var(--color-inverse)) !important;
-		background-color: rgb(var(--color-secondary)) !important;
-		font-size: 0.66em;
-		padding: 2px 7px;
-		border-radius: 5px;
-	}
-	.faq .ladi-accordion .ladi-paragraph {
-		font-size: 12px !important;
-		letter-spacing: 0.25px !important;
-	}
-	.faq. .ladi-accordion .accordion-menu .ladi-paragraph {
-		font-size: 12.5 !important;
-		letter-spacing: 0px !important;
-	}
-	
-	.faq .ladi-accordion .accordion-menu .ladi-frame-background {
-		background-color: rgba(var(--color-secondary),0.2) !important;
-	}
-	.faq .ladi-accordion:hover .accordion-menu .ladi-frame-background, .faq .ladi-accordion .accordion-menu:active .ladi-frame-background {
-		background-color: rgba(var(--color-secondary),1) !important;
-	}
-	.faq .ladi-accordion .accordion-menu .ladi-headline {
-		color: rgba(var(--color-default),0.66) !important;
-	}
-	
-	/* Default form format */
-	.form-default .ladi-form-item-container, .form-default .ladi-form-label-container .ladi-form-label-item {
-        border-radius: 7px !important;
-        border-style: solid !important;
-        border-color: rgba(var(--color-default), 0.25) !important;
-    }
-    .form-default .ladi-form-item-background {
-        border-radius: 6px !important;
-        background-color: rgba(var(--color-background), 0.75) !important;
-    }
-	
-	/* ABOUT PAGE */
-	/* ABOUT PAGE - ABOUT SECTION */
-	/* mission buttons */
-	.btn-mission:hover .ladi-overlay {
-	    background-color: rgba(var(--color-secondary), 0.85) !important;
-	}
-	
-	
-	/* Member introduction image */
-	
-	.aff-img .ladi-image {
-		border-radius: 50% !important;
-		border: 10px solid rgb(var(--color-background));
-		box-shadow: 2px 3px 5px rgba(var(--color-dark), 0.5);
-		background-color: rgba(var(--color-background),0.85);
-	}
-	.aff-img .ladi-image-background {
-	    height: 100% !important;
-	    width: 100% !important;
-	    background-size: cover !important;
-	    background-position: center center !important;
-	    background-repeat: no-repeat;
-	}
-	.aff-img::before {
-		content: '';
-		position: absolute;
-		top: -1%;
-		right: -15%;
-		bottom: -5%;
-		left: -10%;
-		border-radius: 50%;
-		background-color: rgba(var(--color-secondary),0.5);
-		transform: rotate(30deg);
-	}
-	.aff-img:hover::before {
-		transform: rotate(-15deg);
-		transition: all 1s ease;
-	}
-	
-	/* DETAILED BOOKs PAGE */
-	.BookIntroSection .ladi-paragraph, .BookIntroSection .ladi-headline {
-		color: rgba(var(--color-inverse), 1) !important;
-		text-shadow: 0.15em 0.05em 0.15em rgba(var(--color-dark), 1) !important;
-		text-align: center !important;
-	}
-	.pd-heading .ladi-headline {
-		color: rgba(var(--color-primary), 0.66) !important;
-		font-family: UGwcGlucZOLTgwMCdGY !important;
-		letter-spacing: 0px !important;
-		font-size: 16px !important;
-		font-weight: 400 !important;
-	}	
-	
-	.pd-list ul li::before {
-		width: 20px !important;
-		height: 20px !important;
-		top: -2px !important;
-		background-image: url("https://w.ladicdn.com/615bd853467382001223f064/wavebullet-20230816112145-s2fbt.svg") !important;
-		content: "" !important;
-	}
-	.pd-list ul li {
-		color: rgba(var(--color-default), 1) !important;
-		padding: 0px 0px 10px 30px !important;
-	}
-	.pd-list ul li span {
-		padding: 2px 2px;
-		background: rgba(var(--color-primary-light), 0.15);
-		border-radius: 3px;
-		color: rgba(var(--color-primary),1) !important;
-		font-weight: 400 !important;
-	}
-	.pd-image .ladi-image-background {
-		height: 100% !important;
-		width: 100% !important;
-		background-size: cover !important;
-		background-position: center center !important;
-	}
-	.pd-price .ladi-headline {
-		text-align: center !important;
-		font-size: 900 !important;
-		color: rgb(var(--color-primary)) !important;
-		font-size: 18px !important;
-	}
-	.pd-price .ladi-headline::before {
-		content: "chỉ ";
-		color: rgba(var(--color-default), 0.8);
-		font-weight: 400 !important;
-		font-size: 0.5em !important;
-	}
-	.pd-title-product {
-		height: 51px !important;
-		display: flex !important;
-		align-items: center !important;
-	}
-	.pd.transbg-dark .ladi-box, .pd.transbg-dark .ladi-background {background: rgba(var(--color-primary),0.05) !important;}
-    
-    .pd.transbg-dark:hover .ladi-box, .pd.transbg-dark:hover .ladi-background {background: rgba(var(--color-primary),0.15) !important;}
-	
-	/* LadiSales intergration */
-	.ladi-widget.btn-cart {
-		background: linear-gradient(45deg, rgb(var(--color-primary-light)), rgb(var(--color-primary))) !important;
-	}
-	
-	/* PRODUCT PAGE */
-	.productcollection {
-		top: 75px !important;
-		left: 50% !important;
-		transform: translatex(-50%);
-	}
-	.productcollection .ladi-collection-page {
-		justify-content: center !important;
-		display: flex !important;
-		flex-wrap: wrap !important;
-	}
-	
-	
-	/* August 16, 2023 - 11:03 */
+}
+.btn-primary .ladi-button-background::after {background-color: rgb(var(--color-primary-light))!important;}
+.btn-primary:hover .ladi-button-background::after {background-color: rgb(var(--color-primary)) !important;}
+.btn-secondary .ladi-button-background {
+	background-color: rgba(var(--color-background), 1) !important;
+	border-radius: 50vh !important;
+}
+.btn-secondary .ladi-button-background::after {background-color: rgb(var(--color-secondary))!important;}
+.btn-secondary:hover .ladi-button-background::after { background-color: rgb(var(--color-secondary-dark)) !important;}
+
+/* Social buttons */
+.btn-social .ladi-image {filter: brightness(50%) invert(100%) saturate(0) !important;;}
+.btn-social:hover .ladi-image {filter: brightness(100%) saturate(1) invert(0%) !important;}
+
+/* Advertising buttons */
+.btn-ads .ladi-button-background {opacity: 0.5 !important;}
+.btn-ads:hover .ladi-button-background {opacity: 1 !important;}
+.btn-ads:hover .ladi-button-headline {display: none;}
+
+/* TESTIMONY SECTION */
+.testi-img {
+	width: 120px !important;
+	height: 120px !important;
+}
+.testi-img .ladi-image {
+	border-radius: 50vh !important;
+	border: 7px solid rgb(var(--color-background));
+	box-shadow: 2px 3px 5px rgba(var(--color-dark), 1);
+}
+.testi-img .ladi-image-background {
+    height: 100% !important;
+    width: 100% !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat;
+}
+.testi-img::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -15px;
+	bottom: -5px;
+	left: -10px;
+	border-radius: 50%;
+	box-shadow: 2px 3px 5px rgba(var(--color-dark), 1);
+	background-color: rgb(var(--color-primary-light));
+	transform: rotate(30deg);
+}
+.testi-img:hover::before {
+	transform: rotate(-15deg);
+	transition: all 1s ease;
+}
+
+
+/* FAQ SECTION */
+.faq .ladi-accordion .ladi-frame-background {
+	background-color: rgba(var(--color-background),0.5) !important;
+	border-radius: 5px;
+}
+.faq .ladi-accordion .ladi-paragraph {
+	color: rgb(var(--color-default)) !important;
+}
+.faq .ladi-accordion .ladi-paragraph span {
+	color: rgb(var(--color-inverse)) !important;
+	background-color: rgb(var(--color-secondary)) !important;
+	font-size: 0.66em;
+	padding: 2px 7px;
+	border-radius: 5px;
+}
+.faq .ladi-accordion .ladi-paragraph {
+	font-size: 12px !important;
+	letter-spacing: 0.25px !important;
+}
+.faq. .ladi-accordion .accordion-menu .ladi-paragraph {
+	font-size: 12.5 !important;
+	letter-spacing: 0px !important;
+}
+
+.faq .ladi-accordion .accordion-menu .ladi-frame-background {
+	background-color: rgba(var(--color-secondary),0.2) !important;
+}
+.faq .ladi-accordion:hover .accordion-menu .ladi-frame-background, .faq .ladi-accordion .accordion-menu:active .ladi-frame-background {
+	background-color: rgba(var(--color-secondary),1) !important;
+}
+.faq .ladi-accordion .accordion-menu .ladi-headline {
+	color: rgba(var(--color-default),0.66) !important;
+}
+
+/* Default form format */
+.form-default .ladi-form-item-container, .form-default .ladi-form-label-container .ladi-form-label-item {
+border-radius: 7px !important;
+border-style: solid !important;
+border-color: rgba(var(--color-default), 0.25) !important;
+}
+.form-default .ladi-form-item-background {
+border-radius: 6px !important;
+background-color: rgba(var(--color-background), 0.75) !important;
+}
+
+/* ABOUT PAGE */
+/* ABOUT PAGE - ABOUT SECTION */
+/* mission buttons */
+.btn-mission:hover .ladi-overlay {
+    background-color: rgba(var(--color-secondary), 0.85) !important;
+}
+
+
+/* Member introduction image */
+
+.aff-img .ladi-image {
+	border-radius: 50% !important;
+	border: 10px solid rgb(var(--color-background));
+	box-shadow: 2px 3px 5px rgba(var(--color-dark), 0.5);
+	background-color: rgba(var(--color-background),0.85);
+}
+.aff-img .ladi-image-background {
+    height: 100% !important;
+    width: 100% !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat;
+}
+.aff-img::before {
+	content: '';
+	position: absolute;
+	top: -1%;
+	right: -15%;
+	bottom: -5%;
+	left: -10%;
+	border-radius: 50%;
+	background-color: rgba(var(--color-secondary),0.5);
+	transform: rotate(30deg);
+}
+.aff-img:hover::before {
+	transform: rotate(-15deg);
+	transition: all 1s ease;
+}
+
+/* DETAILED BOOKs PAGE */
+.BookIntroSection .ladi-paragraph, .BookIntroSection .ladi-headline {
+	color: rgba(var(--color-inverse), 1) !important;
+	text-shadow: 0.15em 0.05em 0.15em rgba(var(--color-dark), 1) !important;
+	text-align: center !important;
+}
+.pd-heading .ladi-headline {
+	color: rgba(var(--color-primary), 0.66) !important;
+	font-family: UGwcGlucZOLTgwMCdGY !important;
+	letter-spacing: 0px !important;
+	font-size: 16px !important;
+	font-weight: 400 !important;
+}	
+
+.pd-list ul li::before {
+	width: 20px !important;
+	height: 20px !important;
+	top: -2px !important;
+	background-image: url("https://w.ladicdn.com/615bd853467382001223f064/wavebullet-20230816112145-s2fbt.svg") !important;
+	content: "" !important;
+}
+.pd-list ul li {
+	color: rgba(var(--color-default), 1) !important;
+	padding: 0px 0px 10px 30px !important;
+}
+.pd-list ul li span {
+	padding: 2px 2px;
+	background: rgba(var(--color-primary-light), 0.15);
+	border-radius: 3px;
+	color: rgba(var(--color-primary),1) !important;
+	font-weight: 400 !important;
+}
+.pd-image .ladi-image-background {
+	height: 100% !important;
+	width: 100% !important;
+	background-size: cover !important;
+	background-position: center center !important;
+}
+.pd-price .ladi-headline {
+	text-align: center !important;
+	font-size: 900 !important;
+	color: rgb(var(--color-primary)) !important;
+	font-size: 18px !important;
+}
+.pd-price .ladi-headline::before {
+	content: "chỉ ";
+	color: rgba(var(--color-default), 0.8);
+	font-weight: 400 !important;
+	font-size: 0.5em !important;
+}
+.pd-title-product {
+	height: 51px !important;
+	display: flex !important;
+	align-items: center !important;
+}
+.pd.transbg-dark .ladi-box, .pd.transbg-dark .ladi-background {background: rgba(var(--color-primary),0.05) !important;}
+
+.pd.transbg-dark:hover .ladi-box, .pd.transbg-dark:hover .ladi-background {background: rgba(var(--color-primary),0.15) !important;}
+
+/* LadiSales intergration */
+.ladi-widget.btn-cart {
+	background: linear-gradient(45deg, rgb(var(--color-primary-light)), rgb(var(--color-primary))) !important;
+}
+
+/* PRODUCT PAGE */
+.productcollection {
+	top: 75px !important;
+	left: 50% !important;
+	transform: translatex(-50%);
+}
+.productcollection .ladi-collection-page {
+	justify-content: center !important;
+	display: flex !important;
+	flex-wrap: wrap !important;
+}
+
+
+/* August 16, 2023 - 11:03 */
