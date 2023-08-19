@@ -134,12 +134,12 @@ a {text-decoration: none !important;} /* Remove the fucking underline from links
 }
 
 /* Section titlte */
-.section-title .ladi-headline {
+.section-title, .section-title .ladi-headline {
 	font-family: 'Yeseva One', cursive !important;
 	text-align: center !important;
 	font-size: 32px !important;
 }
-@media (max-width: 768px) {.section-title .ladi-headline {font-size: 24px !important;}}
+@media (max-width: 768px) {.section-title, .section-title .ladi-headline {font-size: 24px !important;}}
 
 /* buttons format */
 .btn-hda {border-radius: 50vh !important;}
