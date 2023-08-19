@@ -30,7 +30,7 @@
 .contents-around {justify-content: space-around;}
 .contents-between {justify-content: space-between;}
 .items-center {align-items: center;}
-.items-between {justify-item: space-between;}
+.items-between {align-content: space-between;;}
 
 
 /* Scroll bar size and coloring */
