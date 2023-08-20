@@ -1,0 +1,55 @@
+/* CSS for KB Technology homepage - Edit Aug 20, 2023 */
+:Root {
+	--pfont: 'Raleway', sans-serif;
+	--hfont: 'Oswald', sans-serif;
+	--nfont: 'Lato', sans-serif;
+	
+	--color-background: 255, 255, 255;
+	--color-default: 75, 75, 75;
+	--color-inverse: 255, 255, 255;
+	--color-dark: 2, 51, 114;
+	--color-primary: 4, 64, 242;
+	--color-primary-light: 4, 107, 242;
+	--color-secondary: 58, 242, 7;
+	--color-secondary-dark: 29, 89, 1;
+}
+
+/* Reuseable text formating */
+.par, .par * {font-family: var(--pfont) !important;}
+.hea, .hea * {font-family: var(--hfont) !important;}
+.num, .num * {font-family: var(--nfont) !important;}
+
+.txt-default, .txt-default * {color: rgb(var(--color-default)) !important;}
+.txt-inverse, .txt-inverse * {color: rgb(var(--color-inverse)) !important;}
+.txt-primary, .txt-primary * {color: rgb(var(--color-primary)) !important;}
+.txt-secondary, .txt-secondary * {color: rgb(var(--color-secondary-dark !important;}
+
+.txt-e, .txt-e * {text-align: center;}
+.txt-l, .txt-l * {text-align: left;}
+.txt-r, .txt-r * {text-align: right;}
+.txt-j, .txt-j * {text-align: justify;}
+
+@media (max-width: 768px) {
+	.txts-e, .txts-e * {text-align: center;}
+	.txts-l, .txts-l * {text-align: left;}
+	.txts-r, .txts-r * {text-align: right;}
+	.txts-j, .txts-j * {text-align: justify; text-align-last: center;}
+}
+
+/* Display and positioning */
+.hidden {display: none; }
+.h-center {left: 50%!important; transform: translatex(-50%);}
+@media (min-width: 768px) {.v-center {top: 50% !important; transform: translatey(-50%);}}
+.flex {display: flex;}
+.vflex {flex-flow: column;}
+.hflex {flex-flow: row;}
+.scroll-y {overflow-y: scroll;}
+.wrap {flex-wrap: wrap;}
+.nowrap {flex-wrap: no-wrap;}
+.contents-center {justify-content: center;}
+.contents-around {justify-content: space-around;}
+.contents-between {justify-content: space-between;}
+.items-center {align-items: center;}
+.items-between {justify-item: space-between;}
+
+
