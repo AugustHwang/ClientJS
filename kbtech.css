@@ -52,4 +52,17 @@
 .items-center {align-items: center;}
 .items-between {justify-item: space-between;}
 
+/* Global shaping */
+.transbg-dark .ladi-box, .transbg-dark .ladi-background {background: rgba(var(--color-dark),0.15) !important;}
+.transbg-light .ladi-box, .transbg-light .ladi-background {background: rgba(var(--color-background),0.15) !important;}
+.transbg-dark:hover .ladi-box, .transbg-dark:hover .ladi-background {background: rgba(var(--color-dark),0.35) !important;}
+.transbg-light:hover .ladi-box, .transbg-light:hover .ladi-background {background: rgba(var(--color-background),0.35) !important;}
+.round, .round .ladi-box, .round .ladi-background, .round .ladi-popup {border-radius: 10px !important;}
+.round-b, .round-b .ladi-box, .round-b .ladi-background, .round-b .ladi-popup {border-radius: 20px !important;}
+.round-s, .round-s .ladi-box, .round-s .ladi-background, .round-s .ladi-popup {border-radius: 5px !important;}
+.border .ladi-box, .border .ladi-background {border: 1px solid !important;}
+.border-default .ladi-box, .border-default .ladi-background {border-color: rgb(var(--color-default)) !important;}
+.border-primary .ladi-box, .border-primary .ladi-background {border-color: rgb(var(--color-primary)) !important;}
+.border-secondary .ladi-box, .border-secondary .ladi-background {border-color: rgb(var(--color-secondary)) !important;}
+
 
