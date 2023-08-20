@@ -1,5 +1,9 @@
 /* GLOBAL STYLIZE */
-
+/* Prevent noob selecting my page content */
+::selection {
+  background-color: transparent;
+  color: inherit;
+}
 /* Base for colors and classes */
 :root {
 	--color-background: 255, 255, 255;
