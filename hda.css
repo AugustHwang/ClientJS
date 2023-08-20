@@ -163,6 +163,7 @@ a {text-decoration: none !important;} /* Remove the fucking underline from links
 	text-shadow: -0.5px -1px 1.5px rgba(var(--color-dark), 0.5) !important;
 	text-align: center;
 	line-height: 1em;
+	padding: 0px !important;
 }
 .btn-primary .ladi-button-background {
 	background-color: rgba(var(--color-background), 1) !important;
