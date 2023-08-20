@@ -24,16 +24,16 @@
 .txt-primary, .txt-primary * {color: rgb(var(--color-primary)) !important;}
 .txt-secondary, .txt-secondary * {color: rgb(var(--color-secondary-dark !important;}
 
-.txt-e, .txt-e * {text-align: center;}
-.txt-l, .txt-l * {text-align: left;}
-.txt-r, .txt-r * {text-align: right;}
-.txt-j, .txt-j * {text-align: justify;}
+.txt-e, .txt-e * {text-align: center !important;}
+.txt-l, .txt-l * {text-align: left !important;}
+.txt-r, .txt-r * {text-align: right !important;}
+.txt-j, .txt-j * {text-align: justify !important;}
 
 @media (max-width: 768px) {
-	.txts-e, .txts-e * {text-align: center;}
-	.txts-l, .txts-l * {text-align: left;}
-	.txts-r, .txts-r * {text-align: right;}
-	.txts-j, .txts-j * {text-align: justify; text-align-last: center;}
+	.txts-e, .txts-e * {text-align: center !important;}
+	.txts-l, .txts-l * {text-align: left !important;}
+	.txts-r, .txts-r * {text-align: right !important;}
+	.txts-j, .txts-j * {text-align: justify !important; text-align-last: center;}
 }
 
 /* Display and positioning */
