@@ -1,7 +1,7 @@
 /* GLOBAL STYLIZE */
 /* Prevent noob selecting my page content */
 ::selection {
-  background-color: transparent;
+  background-color: transparent !important;
   color: inherit;
 }
 /* Base for colors and classes */
