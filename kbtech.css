@@ -22,7 +22,7 @@
 .txt-default, .txt-default * {color: rgb(var(--color-default)) !important;}
 .txt-inverse, .txt-inverse * {color: rgb(var(--color-inverse)) !important;}
 .txt-primary, .txt-primary * {color: rgb(var(--color-primary)) !important;}
-.txt-secondary, .txt-secondary * {color: rgb(var(--color-secondary-dark !important;}
+.txt-secondary, .txt-secondary * {color: rgb(var(--color-secondary-dark)) !important;}
 
 .txt-e, .txt-e * {text-align: center !important;}
 .txt-l, .txt-l * {text-align: left !important;}
