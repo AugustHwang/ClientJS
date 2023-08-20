@@ -423,15 +423,17 @@ a {text-decoration: none !important;} /* Remove the fucking underline from links
 	border-radius: 5px;
 }
 .report-block-top .label {
+	font-family: 'Yeseva One', cursive !important;
 	color: rgba(var(--color-inverse), 1);
-	font-size: 28px;
-	font-weight: 700;
+	font-size: 22px;
+	font-weight: 400;
 }
 .report-block-top .value {
 	color: rgba(var(--color-inverse), 1);
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 0.15em;
+    	font-size: 32px;
+    	font-weight: 400;
+    	letter-spacing: 0.15em;
+	font-family: 'Yeseva One', cursive !important;
 }
 .purchaseline {
 	padding-top: 15px;
